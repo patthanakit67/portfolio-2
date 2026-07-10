@@ -1,60 +1,131 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:'Kanit',sans-serif;
 }
 
 body{
-    background:#eef5ff;
+    background:linear-gradient(135deg,#e0f7ff,#d9e7ff,#f1e4ff);
     color:#333;
 }
 
+/* Header */
 header{
-    background:#0066cc;
+    background:linear-gradient(90deg,#38bdf8,#2563eb,#7c3aed);
     color:white;
     text-align:center;
-    padding:25px;
+    padding:40px 20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
+header h1{
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Menu */
 nav{
-    background:#004b99;
+    background:#1e3a8a;
     text-align:center;
     padding:15px;
+    position:sticky;
+    top:0;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:12px;
+    margin:10px;
+    padding:10px 18px;
+    border-radius:30px;
+    transition:.3s;
     font-weight:bold;
 }
 
 nav a:hover{
-    color:yellow;
+    background:linear-gradient(90deg,#38bdf8,#7c3aed);
+    transform:scale(1.08);
 }
 
+/* กล่องเนื้อหา */
 .container{
     width:85%;
     max-width:1000px;
-    margin:30px auto;
+    margin:35px auto;
     background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
+/* หัวข้อ */
+h2{
+    color:#2563eb;
+    border-left:6px solid #7c3aed;
+    padding-left:10px;
+    margin-bottom:20px;
+}
+
+/* รูปโปรไฟล์ */
 img{
-    width:180px;
     display:block;
-    margin:auto;
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    margin:20px auto;
     border-radius:50%;
+    border:6px solid #38bdf8;
+    box-shadow:0 0 20px rgba(56,189,248,.6);
 }
 
+/* รายการ */
+ul{
+    margin-left:25px;
+}
+
+ul li{
+    margin:10px 0;
+    padding:10px;
+    background:#eef7ff;
+    border-left:5px solid #7c3aed;
+    border-radius:8px;
+}
+
+/* ข้อความ */
+p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* Footer */
 footer{
-    background:#004b99;
-    color:white;
+    margin-top:30px;
     text-align:center;
-    padding:15px;
-    margin-top:20px;
+    background:linear-gradient(90deg,#2563eb,#7c3aed);
+    color:white;
+    padding:20px;
+}
+
+/* Animation */
+.container{
+    animation:fadeIn 1s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
