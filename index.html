@@ -2,43 +2,129 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>Portfolio</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | พัฒนกิจ มั่งคั่ง</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Kanit,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#38bdf8,#3b82f6,#7c3aed);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.box{
+background:white;
+width:90%;
+max-width:800px;
+padding:40px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+img{
+width:170px;
+height:170px;
+border-radius:50%;
+border:5px solid #38bdf8;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+h1{
+color:#2563eb;
+font-size:42px;
+}
+
+h2{
+color:#7c3aed;
+margin:10px 0;
+}
+
+p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.menu a{
+text-decoration:none;
+background:linear-gradient(90deg,#38bdf8,#2563eb,#7c3aed);
+color:white;
+padding:15px;
+border-radius:15px;
+font-size:18px;
+font-weight:bold;
+transition:.3s;
+}
+
+.menu a:hover{
+transform:scale(1.05);
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+footer{
+margin-top:30px;
+color:#666;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<header>
+<div class="box">
+
+<img src="images/profile.jpg">
+
 <h1>PORTFOLIO</h1>
+
 <h2>พัฒนกิจ มั่งคั่ง</h2>
-<p>นักเรียนชั้นมัธยมศึกษาปีที่ 6/2 โรงเรียนพานทอง</p>
-</header>
-
-<nav>
-<a href="index.html">หน้าหลัก</a>
-<a href="profile.html">ประวัติส่วนตัว</a>
-<a href="education.html">ประวัติการศึกษา</a>
-<a href="activities.html">ผลงานและกิจกรรม</a>
-<a href="projects.html">ผลงาน</a>
-<a href="contact.html">ติดต่อ</a>
-</nav>
-
-<div class="container">
-
-<h2>ยินดีต้อนรับ</h2>
 
 <p>
-เว็บไซต์นี้จัดทำขึ้นเพื่อเป็นแฟ้มสะสมผลงาน (Portfolio)
-ของ พัฒนกิจ มั่งคั่ง
-สำหรับแสดงข้อมูลส่วนตัว ประวัติการศึกษา ผลงาน กิจกรรม
-และช่องทางการติดต่อ
+นักเรียนชั้นมัธยมศึกษาปีที่ 6/2<br>
+โรงเรียนพานทอง
 </p>
+
+<div class="menu">
+
+<a href="profile.html">👤 ประวัติส่วนตัว</a>
+
+<a href="education.html">🎓 ประวัติการศึกษา</a>
+
+<a href="activities.html">🏆 ผลงานและกิจกรรม</a>
+
+<a href="projects.html">💼 ผลงาน</a>
+
+<a href="contact.html">📞 ติดต่อ</a>
+
+<a href="https://github.com/ชื่อGitHubของคุณ" target="_blank">🌐 GitHub</a>
 
 </div>
 
 <footer>
-© 2026 Portfolio | พัฒนกิจ มั่งคั่ง
+
+© 2026 Portfolio
+
 </footer>
+
+</div>
 
 </body>
 </html>
