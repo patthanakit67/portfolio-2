@@ -4,152 +4,58 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio | พัฒนกิจ มั่งคั่ง</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Kanit,sans-serif;
-}
-
-body{
-background:linear-gradient(135deg,#38bdf8,#3b82f6,#7c3aed);
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:30px;
-}
-
-.box{
-background:white;
-width:90%;
-max-width:900px;
-border-radius:25px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,.25);
-}
-
-/* รูปหน้าปก */
-.banner img{
-width:100%;
-height:300px;
-object-fit:cover;
-display:block;
-}
-
-/* เนื้อหา */
-.content{
-padding:30px;
-text-align:center;
-}
-
-/* รูปโปรไฟล์ */
-.profile{
-width:180px;
-height:180px;
-border-radius:50%;
-border:6px solid white;
-object-fit:cover;
-margin-top:-120px;
-box-shadow:0 5px 20px rgba(0,0,0,.3);
-background:white;
-}
-
-h1{
-color:#2563eb;
-font-size:42px;
-margin-top:20px;
-}
-
-h2{
-color:#7c3aed;
-margin:10px 0;
-}
-
-p{
-font-size:18px;
-margin-bottom:30px;
-}
-
-.menu{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.menu a{
-text-decoration:none;
-background:linear-gradient(90deg,#38bdf8,#2563eb,#7c3aed);
-color:white;
-padding:15px;
-border-radius:15px;
-font-size:18px;
-font-weight:bold;
-transition:.3s;
-}
-
-.menu a:hover{
-transform:translateY(-5px);
-box-shadow:0 5px 15px rgba(0,0,0,.2);
-}
-
-footer{
-margin-top:30px;
-color:#666;
-}
-
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="box">
+<header>
+    <h1>PORTFOLIO</h1>
+    <p>แฟ้มสะสมผลงาน</p>
+</header>
 
-<div class="banner">
-<img src="images/14.jpg">
-</div>
+<nav>
+    <a href="index.html">หน้าหลัก</a>
+    <a href="profile.html">ประวัติส่วนตัว</a>
+    <a href="education.html">ประวัติการศึกษา</a>
+    <a href="activities.html">ผลงานและกิจกรรม</a>
+    <a href="projects.html">ผลงาน</a>
+    <a href="contact.html">ติดต่อ</a>
+</nav>
 
-<div class="content">
+<div class="container" style="text-align:center;">
 
-<img src="images/14.jpg" alt="รูปโปรไฟล์" class="profile">
+    <img src="images/7F90C2E8-BF81-41C8-A522-4B0C02449310.jpeg" alt="รูปโปรไฟล์">
 
-<h1>PORTFOLIO</h1>
+    <h2>พัฒนกิจ มั่งคั่ง</h2>
 
-<h2>พัฒนกิจ มั่งคั่ง</h2>
+    <p>
+        นักเรียนชั้นมัธยมศึกษาปีที่ 6/2 <br>
+        โรงเรียนพานทอง
+    </p>
 
-<p>
-นักเรียนชั้นมัธยมศึกษาปีที่ 6/2<br>
-โรงเรียนพานทอง
-</p>
+    <div class="card">
+        <h3>ยินดีต้อนรับ</h3>
+        <p>
+            ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของฉัน
+            เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมข้อมูลส่วนตัว
+            ประวัติการศึกษา ผลงาน กิจกรรม และช่องทางการติดต่อ
+        </p>
+    </div>
 
-<div class="menu">
+    <br>
 
-<a href="profile.html">👤 ประวัติส่วนตัว</a>
-
-<a href="education.html">🎓 ประวัติการศึกษา</a>
-
-<a href="activities.html">🏆 ผลงานและกิจกรรม</a>
-
-<a href="projects.html">💼 ผลงาน</a>
-
-<a href="contact.html">📞 ติดต่อ</a>
-
-<a href="https://github.com/ชื่อGitHubของคุณ" target="_blank">🌐 GitHub</a>
+    <a href="profile.html" class="btn">👤 ประวัติส่วนตัว</a>
+    <a href="education.html" class="btn">🎓 ประวัติการศึกษา</a>
+    <a href="activities.html" class="btn">🏆 ผลงานและกิจกรรม</a>
+    <a href="projects.html" class="btn">💼 ผลงาน</a>
+    <a href="contact.html" class="btn">📞 ติดต่อ</a>
 
 </div>
 
 <footer>
-© 2026 Portfolio
+© 2026 Portfolio | Patthanakit Mungkhang
 </footer>
-
-</div>
-
-</div>
 
 </body>
 </html>
